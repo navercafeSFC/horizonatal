@@ -1,0 +1,33 @@
+<mvc:View
+    controllerName="com.sfc.horizonatal.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+                    <l:HorizontalLayout class="sapUiContentPadding" >
+                        <Image
+                            src="{img>/products/pic1}"
+                            densityAware="true"
+                            width="{/widthS}">
+                        </Image>
+                        <Image
+                            src="{img>/products/pic1}"
+                            densityAware="true"
+                            width="{/widthM}">
+                        </Image>
+                        <Image
+                            src="{img>/products/pic1}"
+                            densityAware="true"
+                            width="{/widthL}">
+                        </Image>
+                    </l:HorizontalLayout>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
